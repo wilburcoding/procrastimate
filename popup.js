@@ -44,7 +44,7 @@ setInterval(function () {
       var m = da.getMinutes();
       var s = da.getSeconds();
       var secondsUntilEndOfDate = (24 * 60 * 60) - (h * 60 * 60) - (m * 60) - s;
-      var hleft = Math.floor(secondsUntilEndOfDate / 60 / 60);
+      var hleft = Math.floor(secondsUntilEndOfDate / 60 / 60)+5;
       var mleft = Math.floor(secondsUntilEndOfDate / 60 % 60);
       $("#tvalue").html(`${hleft}h ${mleft}m`)
     }
