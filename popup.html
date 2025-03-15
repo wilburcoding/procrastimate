@@ -1,10 +1,106 @@
 <!doctype html>
 <html>
-  <head>
-    <link rel="stylesheet" href="popup.css" />
-  </head>
-  <body>
-    <button id="changeColor">Hello</button>
-    <script src="popup.js"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="popup.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1 style="font-size:40px;font-weight:500;margin-left:15px;margin-bottom:0px;">ProcrastiMate</h1>
+    <div style="display:flex;flex-direction:row">
+      <img src="sneaky.png" style="height:100px;object-fit: cover;position:absolute" id="monkey" />
+      <div
+        style="padding:10px;border:solid 1.4px black; border-radius:20px;margin-left:40px;margin-bottom:20px;background-color: rgb(250, 244, 220);height:20px;border-bottom-left-radius: 0px;">
+        <p style="margin-top:0px;margin-bottom:0px;font-size:16px;">Some work just doesn't have to be done right now.
+        </p>
+      </div>
+    </div>
+    <div style="width:100%; height:auto;display:flex;justify-content:center;align-items: center;display:none;"
+      id="menu">
+      <div style="width:80%;height:auto;background-color: #efd29c;border-radius:5px;padding:10px;">
+        <h1 style="font-size:20px;font-weight:500;margin-top:2px;margin-bottom:8px;">Let's start our anti-productivity
+          now!</h1>
+        <div style="width:100%;display:flex;flex-direction: row;justify-content: space-between;" class="select">
+          <button style="background-color: #e4c386;opacity:0.8 " disabled>30 min<div
+              style="position:absolute;padding:1px;border-radius:2px; margin-top:-48px;margin-left:10px;background-color: rgb(88, 197, 88);">
+              <p style="margin-top:0px;margin-bottom:0px;font-size:11px;">OUT OF STOCK</p>
+            </div></button>
+          <button style="background-color: #e4c386;opacity:0.8" disabled>1 hour<div
+              style="position:absolute;padding:1px;border-radius:2px; margin-top:-48px;margin-left:10px;background-color: rgb(88, 197, 88);">
+              <p style="margin-top:0px;margin-bottom:0px;font-size:11px;">OUT OF STOCK</p>
+            </div></button>
+          <button style="background-color: #e4c386;opacity:0.8" disabled>2 hour<div
+              style="position:absolute;padding:1px;border-radius:2px; margin-top:-48px;margin-left:10px;background-color: rgb(88, 197, 88);">
+              <p style="margin-top:0px;margin-bottom:0px;font-size:11px;">OUT OF STOCK</p>
+            </div></button>
+          <button style="background-color: #e4c386;" id="op">Full Day <div
+              style="position:absolute;padding:1px;border-radius:2px; margin-top:-48px;margin-left:23px;background-color: rgb(88, 197, 88);">
+              <p style="margin-top:0px;margin-bottom:0px;font-size:11px;">POPULAR</p>
+            </div></button>
+
+        </div>
+      </div>
+    </div>
+    <div style="width:100%; height:auto;display:flex;justify-content:center;align-items: center;display:none;"
+      id="timer">
+      <div style="width:80%;height:auto;background-color: #efd29c;border-radius:5px;padding:10px;">
+        <h1 style="font-size:20px;font-weight:400;margin-top:2px;margin-bottom:8px;">Conquering work with
+          anti-productivity!</h1>
+        <h1 style="font-size:40px;font-weight:600;margin-top:3px;margin-bottom:3px;line-height:40px;"><span
+            id="tvalue">0h 0m</span> <span style="font-weight:400">remaining</span></h1>
+      </div>
+    </div>
+    <div style="width:100%; height:auto;display:flex;justify-content:center;align-items: center;margin-top:20px;">
+      <div style="width:80%;height:auto;background-color: #efd29c;border-radius:5px;padding:10px;">
+        <h1 style="font-size:20px;font-weight:500;margin-top:2px;margin-bottom:2px;">Manage your anti-productivity
+          experience!</h1>
+        <div class="option">
+          <p>Motivational Quotes on New Tab</p>
+          <label class="switch">
+            <input type="checkbox" checked disabled>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="option">
+          <p>Smart Tab Management</p>
+          <label class="switch">
+            <input type="checkbox" checked disabled>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="option">
+          <p>Dynamic Time Tracking</p>
+          <label class="switch">
+            <input type="checkbox" checked disabled>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="option">
+          <p>Intelligent Suggestions</p>
+          <label class="switch">
+            <input type="checkbox" checked disabled>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="option">
+          <p>Automatic Focus</p>
+          <label class="switch">
+            <input type="checkbox" checked disabled>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <script src="jquery.min.js"></script>
+
+  <script src="popup.js"></script>
+</body>
+
 </html>
